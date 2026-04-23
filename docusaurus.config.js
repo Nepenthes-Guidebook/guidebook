@@ -49,7 +49,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'urlforum',
+            'https://nepenthes.forumactif.com/',
         },
         theme: {
           customCss: './src/css/custom.css',
