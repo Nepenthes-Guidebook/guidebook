@@ -3,8 +3,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Analytics from "@vercel/analytics/next"
-
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -31,7 +29,6 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="NEPENTHES est un forum RPG qui tient de la fiction spéculative, se déroulant dans une réalité contemporaine alternative.">
-      <Analytics/>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
