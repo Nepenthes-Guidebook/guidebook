@@ -1,0 +1,199 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import "./fonts.css";
+
+:root {
+  --ifm-color-primary: #ea004e;
+  --ifm-color-primary-dark: #d30046;
+  --ifm-color-primary-darker: #c70042;
+  --ifm-color-primary-darkest: #a40037;
+  --ifm-color-primary-light: #ff0257;
+  --ifm-color-primary-lighter: #ff0e5e;
+  --ifm-color-primary-lightest: #ff3176;
+  --ifm-code-font-size: 95%;
+  --ifm-background-color: #F2F7F2;
+  --ifm-footer-background-color: #E3EEE3;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #cbb5f7;
+  --ifm-color-primary-dark: #b08ef3;
+  --ifm-color-primary-darker: #a27bf1;
+  --ifm-color-primary-darkest: #7a41ea;
+  --ifm-color-primary-light: #e6dcfb;
+  --ifm-color-primary-lighter: #f4effd;
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-background-color: #002140;
+  --ifm-footer-background-color: #00152a;
+  --ifm-background-surface-color: #00152a;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+
+/* HERO */
+
+.hero {
+  align-items: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.hero-title {
+  left: 50%;
+  max-width: 700px;
+  margin-top: -2rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+}
+
+.hero-title svg {
+  width: 100%;
+}
+
+.hero img {
+  animation:float 6s ease-in-out infinite;
+  max-width: 650px;
+  position: relative;
+  top: 14rem;
+  transform:translatey(0);
+  width: 100%;
+  z-index: 2;
+}
+
+.hero-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero__title {
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+  color: var(--ifm-color-primary);
+}
+
+h3 {
+  color: var(--ifm-color-primary-lightest);
+}
+
+img {
+  border-radius: 20px;
+}
+
+.heart-container .heart {
+  height: 90px;
+  position: relative;
+  width: 100px;
+}
+
+.heart-container {
+  --mood: red;
+  --mood-speed: 4s;
+
+  display: flex;
+  justify-content: center;
+}
+
+.heart-container .heart:before,
+.heart-container .heart:after {
+  background: var(--mood);
+  border-radius: 50px 50px 0 0;
+  content: "";
+  height: 80px;
+  left: 50px;
+  position: absolute;
+  top: 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  width: 50px;
+  -moz-border-radius: 50px 50px 0 0;
+  -moz-transform: rotate(-45deg);
+  -moz-transform-origin: 0 100%;
+  -ms-transform: rotate(-45deg);
+  -ms-transform-origin: 0 100%;
+  -o-transform: rotate(-45deg);
+  -o-transform-origin: 0 100%;
+  -webkit-transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+}
+
+.heart-container .heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+  -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform: rotate(45deg);
+  -moz-transform-origin: 100% 100%;
+  -ms-transform: rotate(45deg);
+  -ms-transform-origin: 100% 100%;
+  -o-transform: rotate(45deg);
+  -o-transform-origin: 100% 100%;
+}
+
+.heart-container svg.heart-rate {
+  color: white;
+  fill: currentColor;
+  left: 213%;
+  position: absolute;
+  top: 5%;
+  transform: translate(-50%, -50%) scale(0.85);
+  z-index: 999;
+}
+
+.heart-container path {
+  animation: dash var(--mood-speed) linear infinite;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+
+.filters_w_Ao {
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  display: flex!important;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem!important;
+  padding-bottom: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 500;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -500;
+  }
+}
+
+@keyframes float{
+  0%{transform:translatey(0)}
+  50%{transform:translatey(-20px)}
+  100%{transform:translatey(0)}
+}
