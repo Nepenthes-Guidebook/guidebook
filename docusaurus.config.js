@@ -89,7 +89,17 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'forumSidebar',
             position: 'left',
-            label: 'Évoluer sur le forum',
+            label: 'Mécaniques de rp',
+          },
+          {
+            href: '/docs/univers/vivre-a-nepenthes/territoire',
+            label: 'Territoire',
+            position: 'left',
+          },
+          {
+            href: '/docs/administratif/faq',
+            label: 'FAQ',
+            position: 'left',
           },
           {
             href: 'https://nepenthes.forumactif.com/',

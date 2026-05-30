@@ -197,3 +197,7 @@ img {
   50%{transform:translatey(-20px)}
   100%{transform:translatey(0)}
 }
+
+.theme-doc-card-icon.cardTitleIcon_GcdP{
+  display: none !important;
+}
